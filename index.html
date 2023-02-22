@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Weather Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<section class="hero is-small is-primary">
+            <div class="hero-body">
+                <div class="">
+                    <p class="title">
+                        Weather forecast
+                    </p>
+                </div>
+            </div>
+        </section>
+	</header>
+	<aside>
+		<!-- <form> -->
+			<label for="city-input">Enter a city name:</label>
+			<input type="text" id="city-input" placeholder="City name">
+			<button id="submit-btn" type="submit">Search</button>
+		<!-- </form> -->
+		<div id="search-history">
+			<button class="history-btn">City 1</button>
+			<button class="history-btn">City 2</button>
+            <button class="history-btn">City 3</button>
+            <button class="history-btn">City 4</button>
+            <button class="history-btn">City 5</button>
+
+			<!-- More buttons with past searches -->
+		</div>
+	</aside>
+	<main>
+        <div class="container is-fluid">
+		<div id="current-weather" class="tile is-7 box">
+			<h2 id="city-name" class="title">Oxnard</h2>
+			<p id="date" class="subtitle">02/12/2023</p>
+			<p id="weather-icon" class="content"></p>
+			<p id="temperature" class="content">15 F</p>
+			<p id="wind-speed" class="content">12 MPH</p>
+			<p id="humidity" class="content">4%</p>
+		</div>
+		<div id="forecast">
+			<!-- 5-day forecast cards -->
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                    <p class="title">Hello World</p>
+                    <p class="subtitle">What is up?</p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                    <p class="title">Foo</p>
+                    <p class="subtitle">Bar</p>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                  <article class="tile is-child box">
+                    <p class="title">Third column</p>
+                    <p class="subtitle">With some content</p>
+                    <div class="content">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                      <p class="title">Fourth column</p>
+                      <p class="subtitle">With some content</p>
+                      <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                      </div>
+                    </article>
+                  </div>
+                  <div class="tile is-parent">
+                    <article class="tile is-child box">
+                      <p class="title">Fifth column</p>
+                      <p class="subtitle">With some content</p>
+                      <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
+                      </div>
+                    </article>
+                  </div>
+              </div>
+            </div>
+		</div>
+	</main>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+    integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

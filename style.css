@@ -1,0 +1,86 @@
+header {
+	background-color: #274fee;
+	color: #fff;
+	padding: 1em;
+	text-align: center;
+    margin: 5px;
+    border-radius: 6px;
+    
+}
+
+aside {
+	background-color: #fff;
+	padding: 1em;
+	width: 25%;
+	float: left;
+    border-style: solid;
+    border-color: #274fee;
+    margin: 0px 5px;
+    box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
+    border-radius: 6px;
+}
+
+form {
+	margin-bottom: 1em;
+}
+
+input[type="text"] {
+	display: block;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+}
+
+button[type="submit"] {
+	background-color: #274fee;
+	color: #fff;
+	padding: 0.5em;
+	border: solid;
+	cursor: pointer;
+}
+
+#search-history {
+	margin-bottom: 1em;
+}
+
+#current-weather .content{
+    margin-bottom: 1.5px;
+}
+
+.history-btn {
+	background-color: #ccc;
+	color: #333;
+	padding: 0.5em;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin-bottom: 0.5em;
+}
+
+.main {
+	float: left;
+	width: 75%;
+	padding: 1em;
+}
+
+#current-weather {
+	margin-bottom: 1em;
+    display: inline-block;
+    width: 75%;
+    border-style: solid;
+    border-color: #274fee;
+}
+
+#weather-icon {
+	font-size: 3em;
+	margin-bottom: 0.5em;
+}
+
+#forecast {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.is-child{
+    border-style: solid;
+    border-color: #274fee;
+}
