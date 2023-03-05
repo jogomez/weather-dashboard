@@ -31,6 +31,7 @@ $("#submit-btn").on("click", function (event) {
 // Enter key executes the search
 $("#city-input").keyup(function(event) {
     if (event.keyCode === 13) {
+        errorMsgEl.empty();
         $("#submit-btn").click();
     }
 });
