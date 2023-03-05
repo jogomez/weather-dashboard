@@ -51,7 +51,7 @@ $(document).on("click", "#city-input", function cleanError(){
 });
 
 function getWeather(city) {
-    let url = 'http://api.openweathermap.org/geo/1.0/direct?q=' + city + "&appid=" + api_key;
+    let url = 'https://api.openweathermap.org/geo/1.0/direct?q=' + city + "&appid=" + api_key;
 
     fetch(url)
         .then(function (response) {
@@ -83,7 +83,7 @@ function getWeather(city) {
                     weatherConditions.temp = parseFloat(((data.list[0].main.temp-273.15)*1.8)+32).toFixed(1)+'\u2109'
                     weatherConditions.humidity = data.list[0].main.humidity+'%';
                     weatherConditions.wind_speed = data.list[0].wind.speed+' MPH';
-                    weatherConditions.icon = 'http://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png';
+                    weatherConditions.icon = 'https://openweathermap.org/img/w/' + data.list[0].weather[0].icon + '.png';
 
                     const currentWeatherHtml = createTodaysConditionsEl(cityName, weatherConditions);
                     currentWeatherEl.append(currentWeatherHtml);
@@ -95,7 +95,7 @@ function getWeather(city) {
                         weatherConditions.temp = parseFloat(((data.list[index].main.temp-273.15)*1.8)+32).toFixed(1)+'\u2109';
                         weatherConditions.humidity = data.list[index].main.humidity+'%';
                         weatherConditions.wind_speed = data.list[index].wind.speed+ ' MPH';
-                        weatherConditions.icon = 'http://openweathermap.org/img/w/' + data.list[index].weather[0].icon + '.png';
+                        weatherConditions.icon = 'https://openweathermap.org/img/w/' + data.list[index].weather[0].icon + '.png';
 
                         const forecastHtml = createDateForecastEl(weatherConditions);
                         forecastContainterEl.append(forecastHtml);
