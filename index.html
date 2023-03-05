@@ -10,8 +10,9 @@
 		<section class="hero is-small is-primary">
             <div class="hero-body">
                 <div class="">
-                    <p class="title">
-                        Weather forecast
+                      <h1 class="title-hero">
+                        <b>Weather forecast</b>
+                      </h1>
                     </p>
                 </div>
             </div>
@@ -19,75 +20,28 @@
 	</header>
 	<aside>
 		<!-- <form> -->
-			<label for="city-input">Enter a city name:</label>
-			<input type="text" id="city-input" placeholder="City name">
-			<button id="submit-btn" type="submit">Search</button>
+      <section class="user-input">
+        <label for="city-input"><b>Enter a city name</b></label>
+        <input type="text" id="city-input" placeholder="City name">
+        <button id="submit-btn" type="submit">Search</button>
+        <div id="error-msg"></div>
+      </section>
 		<!-- </form> -->
+    <p><b>Recent activity</b></p>
 		<div id="search-history">
-			<button class="history-btn">City 1</button>
-			<button class="history-btn">City 2</button>
-            <button class="history-btn">City 3</button>
-            <button class="history-btn">City 4</button>
-            <button class="history-btn">City 5</button>
-
-			<!-- More buttons with past searches -->
+      
 		</div>
 	</aside>
 	<main>
-        <div class="container is-fluid">
-		<div id="current-weather" class="tile is-7 box">
-			<h2 id="city-name" class="title">Oxnard</h2>
-			<p id="date" class="subtitle">02/12/2023</p>
-			<p id="weather-icon" class="content"></p>
-			<p id="temperature" class="content">15 F</p>
-			<p id="wind-speed" class="content">12 MPH</p>
-			<p id="humidity" class="content">4%</p>
-		</div>
-		<div id="forecast">
-			<!-- 5-day forecast cards -->
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                  <article class="tile is-child box">
-                    <p class="title">Hello World</p>
-                    <p class="subtitle">What is up?</p>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child box">
-                    <p class="title">Foo</p>
-                    <p class="subtitle">Bar</p>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                  <article class="tile is-child box">
-                    <p class="title">Third column</p>
-                    <p class="subtitle">With some content</p>
-                    <div class="content">
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                    </div>
-                  </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                      <p class="title">Fourth column</p>
-                      <p class="subtitle">With some content</p>
-                      <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                      </div>
-                    </article>
+        <div class="container">
+          <div class="todaysConditions">
+          </div>
+          <div id="forecast">
+            <!-- 5-day forecast cards -->
+                <div class="tile is-ancestor" id="forecast-container">                                       
                   </div>
-                  <div class="tile is-parent">
-                    <article class="tile is-child box">
-                      <p class="title">Fifth column</p>
-                      <p class="subtitle">With some content</p>
-                      <div class="content">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.</p>
-                      </div>
-                    </article>
-                  </div>
-              </div>
             </div>
-		</div>
+        </div>
 	</main>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
     integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
