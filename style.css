@@ -1,7 +1,15 @@
+html *{
+	font-family: Tahoma, Verdana, sans-serif;
+}
+
+.title-hero{
+	font-size: 48px;
+}
+
 header {
 	background-color: #274fee;
 	color: #fff;
-	padding: 1em;
+	padding: 6px;
 	text-align: center;
     margin: 5px;
     border-radius: 6px;
@@ -11,13 +19,18 @@ header {
 aside {
 	background-color: #fff;
 	padding: 1em;
-	width: 25%;
+	width: 20%;
 	float: left;
     border-style: solid;
     border-color: #274fee;
     margin: 0px 5px;
     box-shadow: 0 0.5em 1em -0.125em rgb(10 10 10 / 10%), 0 0 0 1px rgb(10 10 10 / 2%);
     border-radius: 6px;
+	z-index: 1;
+}
+
+.container{
+	margin: 0px 0px 0px 360px;
 }
 
 form {
@@ -39,7 +52,10 @@ button[type="submit"] {
 }
 
 #search-history {
-	margin-bottom: 1em;
+	margin: auto;
+	display: flex;
+    flex-direction: column;
+    width: max-content;
 }
 
 #current-weather .content{
@@ -65,7 +81,7 @@ button[type="submit"] {
 #current-weather {
 	margin-bottom: 1em;
     display: inline-block;
-    width: 75%;
+    width: 100%;
     border-style: solid;
     border-color: #274fee;
 }
@@ -83,4 +99,30 @@ button[type="submit"] {
 .is-child{
     border-style: solid;
     border-color: #274fee;
+}
+
+.user-input{
+    margin: 3px;
+	border-bottom-style: solid;
+    border-block-color: #274fee;
+}
+
+.history-btn{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+	cursor: pointer;
+}
+
+.button-wrap{
+	margin: 3px;
+	cursor: pointer;
+}
+
+#error-msg{
+	display: block;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+	color: #f00909;
 }
